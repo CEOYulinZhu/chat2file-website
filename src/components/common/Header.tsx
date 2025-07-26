@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import SmoothLink from "./SmoothLink"; // Import the new component
 
 const MenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -55,47 +55,62 @@ interface HeaderProps {
 
 export function Header({ dictionary }: HeaderProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("");
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const closeMenu = () => setIsMenuOpen(false);
 
+    const navItems = useMemo(() => [
+        { id: "features", label: dictionary.features },
+        { id: "showcase", label: dictionary.showcase },
+        { id: "timeline", label: dictionary.timeline },
+        { id: "help", label: dictionary.help },
+        { id: "feedback", label: dictionary.feedback },
+    ], [dictionary]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const offset = 120; // Adjust this offset based on your header height and preference
+
+            let currentSection = "";
+            for (const item of navItems) {
+                const element = document.getElementById(item.id);
+                if (element) {
+                    if (element.offsetTop <= scrollPosition + offset) {
+                        currentSection = item.id;
+                    }
+                }
+            }
+
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 5) {
+                currentSection = navItems[navItems.length - 1].id;
+            }
+
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Set initial active section
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [navItems]);
+
     const navLinks = (
         <>
-            <SmoothLink
-                href="#features"
-                onClick={closeMenu}
-                className="nav-link text-lg font-normal text-[--foreground-light] hover:text-[--brand-blue] md:text-sm"
-            >
-                {dictionary.features}
-            </SmoothLink>
-            <SmoothLink
-                href="#showcase"
-                onClick={closeMenu}
-                className="nav-link text-lg font-normal text-[--foreground-light] hover:text-[--brand-blue] md:text-sm"
-            >
-                {dictionary.showcase}
-            </SmoothLink>
-            <SmoothLink
-                href="#timeline"
-                onClick={closeMenu}
-                className="nav-link text-lg font-normal text-[--foreground-light] hover:text-[--brand-blue] md:text-sm"
-            >
-                {dictionary.timeline}
-            </SmoothLink>
-            <SmoothLink
-                href="#help"
-                onClick={closeMenu}
-                className="nav-link text-lg font-normal text-[--foreground-light] hover:text-[--brand-blue] md:text-sm"
-            >
-                {dictionary.help}
-            </SmoothLink>
-            <SmoothLink
-                href="#feedback"
-                onClick={closeMenu}
-                className="nav-link text-lg font-normal text-[--foreground-light] hover:text-[--brand-blue] md:text-sm"
-            >
-                {dictionary.feedback}
-            </SmoothLink>
+            {navItems.map((item) => (
+                <SmoothLink
+                    key={item.id}
+                    href={`#${item.id}`}
+                    onClick={closeMenu}
+                    className={`nav-link text-lg font-normal text-[--foreground-light] hover:text-[--brand-blue] md:text-sm ${activeSection === item.id ? "active text-[--brand-blue]" : ""
+                        }`}
+                >
+                    {item.label}
+                </SmoothLink>
+            ))}
         </>
     );
 
