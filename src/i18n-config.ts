@@ -1,6 +1,6 @@
 export const i18n = {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'],
+    defaultLocale: 'zh',
+    locales: ['zh', 'en', 'ja'],
 } as const;
 
 export type Locale = (typeof i18n)['locales'][number]; 

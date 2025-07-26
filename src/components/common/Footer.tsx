@@ -33,6 +33,7 @@ const Footer = ({ dictionary }: FooterProps) => {
                         <p>&copy; {new Date().getFullYear()} Chat2File-deepseek. All Rights Reserved.</p>
                         <Link href="/en" className="hover:underline">English</Link>
                         <Link href="/zh" className="hover:underline">中文</Link>
+                        <Link href="/ja" className="hover:underline">日本語</Link>
                     </div>
                     <div className="order-1 md:order-2 text-center md:text-right">
                         <span>{dictionary.suggestion_text}</span>
