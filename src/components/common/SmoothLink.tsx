@@ -14,12 +14,12 @@ interface SmoothLinkProps {
 const SmoothLink: React.FC<SmoothLinkProps> = ({ href, children, className, onClick, passHref }) => {
     const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
-        const targetId = href.substring(1); //
+        const targetId = href.substring(1); 
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 80, // Offset for the fixed header
+                top: targetElement.offsetTop - 80, 
                 behavior: 'smooth',
             });
         }

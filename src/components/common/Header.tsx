@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/ui/Button";
 import { useState, useEffect, useMemo } from "react";
-import SmoothLink from "./SmoothLink"; // Import the new component
+import SmoothLink from "./SmoothLink";
 
 const MenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg

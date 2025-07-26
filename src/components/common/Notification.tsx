@@ -14,14 +14,13 @@ const Notification: React.FC<NotificationProps> = ({ message, type, onClose }) =
         setIsVisible(true);
         const timer = setTimeout(() => {
             setIsVisible(false);
-            // Wait for the fade-out animation to complete before calling onClose
             setTimeout(onClose, 300);
         }, 3000);
 
         return () => clearTimeout(timer);
     }, [onClose]);
 
-    const bgColor = 'bg-blue-500'; // Using brand color
+    const bgColor = 'bg-blue-500'; 
     const Icon = type === 'success' ? CheckCircle : XCircle;
 
     return (
