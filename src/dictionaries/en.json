@@ -1,0 +1,168 @@
+{
+    "header": {
+        "features": "Features",
+        "showcase": "Showcase",
+        "timeline": "Timeline",
+        "help": "Help",
+        "feedback": "Feedback"
+    },
+    "footer": {
+        "title": "Start Your Efficiency Revolution",
+        "subtitle": "All features are, and always will be, free. No sign-up required.",
+        "install_button": "Install for Free",
+        "suggestion_text": "Have feedback or ideas? ",
+        "suggestion_link": "Let us know!"
+    },
+    "hero": {
+        "title": "Chat2File-deepseek",
+        "subtitle": "Instantly convert DeepSeek chats into polished documents. Export to Markdown, Word, PDF, or PNG in a single click.",
+        "cta_button": "Get Started for Free"
+    },
+    "features": {
+        "section_header": {
+            "title_part1": "Smart, ",
+            "title_part2": "Powerful",
+            "subtitle": "We've reimagined the workflow, so you can focus on what matters."
+        },
+        "items": [
+            {
+                "title": "Effortless Export",
+                "description": "Go beyond copy-pasting. Instantly archive anything from long notes to fleeting ideas with a single click."
+            },
+            {
+                "title": "Total Customization",
+                "description": "From author attributions to visual themes, tailor every detail to match your style. Set it once, use it forever."
+            },
+            {
+                "title": "Flawless Rendering",
+                "description": "Our advanced rendering engine ensures every detail is perfect, from syntax highlighting to complex Mermaid diagrams."
+            }
+        ]
+    },
+    "showcase": {
+        "section_header": {
+            "title_part1": "Simple, ",
+            "title_part2": "Stunning",
+            "subtitle": "Pixel-perfect rendering, from chat to document. What you see is what you get."
+        },
+        "items": [
+            {
+                "name": "Seamless",
+                "description": "Save entire conversations with one click. Say goodbye to tedious, repetitive tasks."
+            },
+            {
+                "name": "Tailored",
+                "description": "Fine-tune Word exports and image settings to create documents that are uniquely yours."
+            },
+            {
+                "name": "Polished",
+                "description": "With 21 built-in themes for both light and dark modes, your documents will always look exceptional."
+            }
+        ]
+    },
+    "timeline": {
+        "section_header": {
+            "title_part1": "Driven, ",
+            "title_part2": "Evolving",
+            "subtitle": "We're constantly improving based on the real-world needs and valuable feedback from our users."
+        },
+        "items": [
+            {
+                "version": "V3.0",
+                "date": "July 23, 2025",
+                "title": "V3.0: The Efficiency Revolution",
+                "description": "A complete overhaul, introducing 'Full Conversation Export' and 'Personalized Settings', plus a rewritten engine to deliver a true WYSIWYG experience.",
+                "features": [
+                    "Full Conversation Export",
+                    "Personalized Settings",
+                    "Rewritten Engine",
+                    "Image Export"
+                ],
+                "reads": "1k reads",
+                "link_text": "Learn More"
+            },
+            {
+                "version": "V2.0",
+                "date": "July 15, 2025",
+                "title": "V2.0: A Polished Experience",
+                "description": "Driven by community feedback, we redesigned the UI and core engine, with major improvements to PDF math rendering and Word export stability.",
+                "features": [
+                    "Redesigned UI",
+                    "Improved PDF Formulas",
+                    "Stable Word Exports"
+                ],
+                "reads": "2k reads",
+                "link_text": "Learn More"
+            },
+            {
+                "version": "V1.0",
+                "date": "February 22, 2025",
+                "title": "V1.0: The Foundation",
+                "description": "Built to solve the core problem of messy copy-pasting. V1.0 provided reliable, format-preserving exports for Markdown, TXT, Word, and PDF.",
+                "features": [
+                    "Multi-Format Export",
+                    "Syntax Highlighting",
+                    "Preserved Formatting"
+                ],
+                "reads": "2k reads",
+                "link_text": "Learn More"
+            }
+        ]
+    },
+    "feedback": {
+        "section_header": {
+            "title_part1": "Honest, ",
+            "title_part2": "Feedback",
+            "subtitle": "Your feedback drives our innovation."
+        },
+        "form": {
+            "name_label": "Name",
+            "name_placeholder": "Name/Nickname",
+            "email_label": "Email",
+            "email_placeholder": "Contact Email",
+            "message_label": "Your Suggestion",
+            "message_placeholder": "Tell us about your ideas, feedback, or any issues you've encountered.",
+            "submit_button": "Submit Feedback"
+        },
+        "notification": {
+            "success_message": "Thanks for your feedback! We'll review it shortly."
+        },
+        "validation": {
+            "email_required": "Email is required",
+            "invalid_email": "Please enter a valid email"
+        }
+    },
+    "help": {
+        "section_header": {
+            "title_part1": "Quick, ",
+            "title_part2": "Answers",
+            "subtitle": "Everything you need to know, right here."
+        },
+        "items": [
+            {
+                "question": "Is it free?",
+                "answer": "Yes, it's completely free. All features are available without cost or sign-up, now and forever."
+            },
+            {
+                "question": "How to get started?",
+                "answer": "Install from the Edge store, then chat on chat.deepseek.com. You'll find export buttons under each AI response for instant downloads. Use the global export for multiple conversations."
+            },
+            {
+                "question": "What are the export formats?",
+                "answer": "We support Markdown, Word, PDF, PNG, and plain text, each optimized for different needs like blogs, reports, or social media."
+            },
+            {
+                "question": "Does it keep the formatting?",
+                "answer": "Our advanced rendering engine ensures 'what you see is what you get'. All formatting, from code blocks and math formulas to diagrams, is perfectly preserved in your exports."
+            },
+            {
+                "question": "What's the global export?",
+                "answer": "The global export feature allows you to save entire conversations or select multiple responses at once. Find the global action button to easily batch export your chats."
+            },
+            {
+                "question": "Can I customize settings?",
+                "answer": "The settings panel lets you customize Word document properties, default image styles, interface options, and more. Set your preferences once and you're all set."
+            }
+        ]
+    }
+}

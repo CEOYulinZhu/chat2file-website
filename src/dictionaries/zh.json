@@ -1,0 +1,168 @@
+{
+    "header": {
+        "features": "特点",
+        "showcase": "演示",
+        "timeline": "动态",
+        "help": "帮助",
+        "feedback": "反馈"
+    },
+    "footer": {
+        "title": "即刻体验，开启你的效率革命",
+        "subtitle": "所有功能，过去、现在、未来，永远完全免费，永远无需登录。",
+        "install_button": "立即免费安装",
+        "suggestion_text": "对产品有任何建议或想法？ ",
+        "suggestion_link": "欢迎告诉我们"
+    },
+    "hero": {
+        "title": "Chat2File-deepseek",
+        "subtitle": "DeepSeek 对话一键转专业文档，Markdown/Word/PDF/PNG 秒导出",
+        "cta_button": "立即免费获取"
+    },
+    "features": {
+        "section_header": {
+            "title_part1": "进化，",
+            "title_part2": "效率革命",
+            "subtitle": "我们重塑了工作流，只为让你更专注。"
+        },
+        "items": [
+            {
+                "title": "一键导出，全局掌控",
+                "description": "不再局限于手动复制粘贴。无论是长篇笔记、技术博客，还是一闪而过的灵感，都能一键打包，即时归档。"
+            },
+            {
+                "title": "深度定制，风格随心",
+                "description": "从作者署名到导出主题，每一处细节皆可定制。你的专属风格，理应由你定义。一次配置，持久生效。"
+            },
+            {
+                "title": "精准渲染，完美呈现",
+                "description": "我们重写了渲染引擎，只为完美再现每一个细节。无论是代码高亮还是 Mermaid 图表，皆可原样呈现。"
+            }
+        ]
+    },
+    "showcase": {
+        "section_header": {
+            "title_part1": "强大，",
+            "title_part2": "眼见为实",
+            "subtitle": "从对话到文档，每一步都精准还原，所见即所得。"
+        },
+        "items": [
+            {
+                "name": "全局导出",
+                "description": "一键导出完整对话，告别反复操作，效率时代已至。"
+            },
+            {
+                "name": "专属设置中心",
+                "description": "自定义 Word 属性与图片风格，让工具真正为你所用。"
+            },
+            {
+                "name": "丰富导出风格",
+                "description": "内置多达21种代码高亮和主题风格，无论是浅色还是深色模式，都能让你的导出文档别具一格。"
+            }
+        ]
+    },
+    "timeline": {
+        "section_header": {
+            "title_part1": "脚步，",
+            "title_part2": "从未停止",
+            "subtitle": "我们从未停止脚步，每一次更新都源于用户的真实需求与宝贵反馈。"
+        },
+        "items": [
+            {
+                "version": "V3.0",
+                "date": "2025年7月23日",
+                "title": "效率革命 · 重塑工作流",
+                "description": "一场彻底的效率革命，引入“全局导出”与“专属设置中心”两大颠覆性功能，并完全重构所有导出引擎，兑现了“所见即所得”的承诺。",
+                "features": [
+                    "全局导出",
+                    "专属设置中心",
+                    "引擎完全重构",
+                    "图片导出"
+                ],
+                "reads": "1k 阅读",
+                "link_text": "探索更新详情"
+            },
+            {
+                "version": "V2.0",
+                "date": "2025年7月15日",
+                "title": "精雕细琢 · 体验跃升",
+                "description": "全面响应社区反馈，对UI界面与核心引擎进行重构。重点优化了PDF数学公式的渲染，并增强了Word导出的稳定性。",
+                "features": [
+                    "全新UI界面",
+                    "PDF公式优化",
+                    "Word导出增强"
+                ],
+                "reads": "2k 阅读",
+                "link_text": "探索更新详情"
+            },
+            {
+                "version": "V1.0",
+                "date": "2025年2月22日",
+                "title": "破局而生 · 解决痛点",
+                "description": "直击开发者与学习者手动复制格式混乱的痛点，提供对 Markdown、TXT、Word 及 PDF 的核心导出支持，实现精准格式保留。",
+                "features": [
+                    "多格式导出",
+                    "代码高亮保留",
+                    "基础格式化"
+                ],
+                "reads": "2k 阅读",
+                "link_text": "探索更新详情"
+            }
+        ]
+    },
+    "feedback": {
+        "section_header": {
+            "title_part1": "倾听, ",
+            "title_part2": "由衷之言",
+            "subtitle": "您的每一个建议，都是我们前行的动力。"
+        },
+        "form": {
+            "name_label": "称呼",
+            "name_placeholder": "姓名/昵称",
+            "email_label": "邮箱",
+            "email_placeholder": "联系邮箱",
+            "message_label": "您的建议",
+            "message_placeholder": "功能建议、体验反馈或问题，均可在此说明",
+            "submit_button": "立即提交反馈"
+        },
+        "notification": {
+            "success_message": "感谢您的反馈！我们将尽快处理。"
+        },
+        "validation": {
+            "email_required": "邮箱地址不能为空",
+            "invalid_email": "请输入有效的邮箱地址"
+        }
+    },
+    "help": {
+        "section_header": {
+            "title_part1": "常见，",
+            "title_part2": "疑问解答",
+            "subtitle": "您想了解的答案，都在这里。"
+        },
+        "items": [
+            {
+                "question": "Chat2File 是否免费使用？",
+                "answer": "完全免费。所有功能，过去、现在、未来，永远完全免费，永远无需登录。我们希望技术能纯粹地为所有人服务，消除一切不必要的障碍。"
+            },
+            {
+                "question": "如何安装和使用 Chat2File？",
+                "answer": "访问 Microsoft Edge 插件商店安装插件，然后打开 chat.deepseek.com 开始对话。在每个 AI 回答下方，您会看到导出按钮，选择需要的格式即可一键下载。也可使用全局导出功能批量导出多个对话。"
+            },
+            {
+                "question": "支持哪些导出格式？",
+                "answer": "支持 Markdown、Word、PDF、PNG 图片和纯文本格式。Markdown 适合技术博客，Word 适合工作报告，PDF 适合存档分享，PNG 适合社交媒体分享，纯文本适合快速记录。"
+            },
+            {
+                "question": "导出的文档格式如何？",
+                "answer": "我们重写了渲染引擎，追求极致的'所见即所得'。完美保留代码高亮、数学公式、Mermaid 图表、表格和多级列表等所有格式，确保导出文档与原对话内容完全一致。"
+            },
+            {
+                "question": "什么是全局导出功能？",
+                "answer": "全局导出允许您一键导出整场对话或选择性导出多个对话轮次。在对话页面右下角的全局操作按钮中，可以多选导出任意数量的对话轮次，或一键全选当前页面所有对话。"
+            },
+            {
+                "question": "如何个性化设置导出选项？",
+                "answer": "在设置面板中，您可以设定 Word 文档属性（作者、标题等）、定义默认图片风格（浅色/暗色主题、圆角大小）、管理界面显示等。一次配置，永久生效。"
+            }
+        ]
+    }
+}
