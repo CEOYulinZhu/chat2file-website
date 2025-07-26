@@ -55,11 +55,37 @@ chat2file-deepseek-web 是一个基于 Next.js 构建的现代化、国际化的
 
     打开 [http://localhost:3000](http://localhost:3000) 即可在浏览器中查看项目。
 
+## 📦 构建与部署
+
+本项目配置为静态站点导出 (Static Site Generation)，非常适合部署在 Vercel、GitHub Pages 或其他任何静态托管服务上。
+
+1.  **构建项目**
+
+    执行以下命令来构建静态文件：
+
+    ```bash
+    npm run build
+    ```
+
+    该命令会执行以下操作：
+    -   使用 `next build` 生成静态站点文件，输出到 `out/` 目录。
+    -   设置 `basePath` 为 `/chat2file`，以支持在子目录部署。
+    -   构建完成后，自动执行 `scripts/postbuild.js` 脚本，在 `out/` 目录下创建一个 `index.html` 文件，用于将根路径访问重定向到默认的中文页面 (`/zh/`)。
+
+2.  **部署**
+
+    将 `out/` 目录下的所有文件上传到您的静态托管服务即可。
+
+    例如，如果您使用 GitHub Pages，可以将 `out` 目录部署到 `gh-pages` 分支。
+
 ## 📂 项目结构
 
 ```
 /
+├── out/                   # 静态导出文件目录
 ├── public/                # 静态资源，如图片、字体等
+├── scripts/
+│   └── postbuild.js       # 构建后执行的脚本，用于创建重定向
 ├── src/
 │   ├── app/
 │   │   └── [locale]/      # Next.js App Router, 按语言区域划分

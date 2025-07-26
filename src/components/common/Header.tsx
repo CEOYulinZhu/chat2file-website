@@ -118,7 +118,7 @@ export function Header({ dictionary }: HeaderProps) {
             <div className="container mx-auto flex h-16 max-w-screen-lg items-center justify-between px-4">
                 <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
                     <Image
-                        src="/logo.png"
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.png`}
                         alt="Chat2File-deepseek Logo"
                         width={36}
                         height={36}

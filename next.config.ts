@@ -1,14 +1,22 @@
+import type { NextConfig } from "next";
+
+const isProd = process.env.NODE_ENV === "production";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
+  output: isProd ? "export" : undefined,
+  basePath: basePath,
+  trailingSlash: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.postimg.cc',
-        port: '',
-        pathname: '**',
-      },
-    ],
+    unoptimized: true,
+  },
+  async rewrites() {
+    if (isProd) {
+      return [];
+    }
+    return [
+    ];
   },
 };
 

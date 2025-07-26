@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import SectionHeader from '../common/SectionHeader';
@@ -59,7 +60,7 @@ const Showcase = ({ dictionary }: ShowcaseProps) => {
                             <div className={`${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
                                 <div className="w-full rounded-2xl overflow-hidden border border-gray-200/50 dark:border-gray-800 transition-transform duration-500 ease-in-out hover:scale-[1.02] max-h-[520px]">
                                     <Image
-                                        src={item.image}
+                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${item.image}`}
                                         alt={`${item.name} Showcase`}
                                         width={item.width}
                                         height={item.height}

@@ -6,7 +6,6 @@ import Showcase from "@/components/sections/Showcase";
 import Timeline from "@/components/sections/Timeline";
 import Help from "@/components/sections/Help";
 import Feedback from "@/components/sections/Feedback";
-import Footer from "@/components/common/Footer";
 import { Locale } from "@/i18n-config";
 
 interface HomeProps {
@@ -27,7 +26,6 @@ export default async function Home({ params }: HomeProps) {
                 <Help dictionary={dictionary.help} />
                 <Feedback dictionary={dictionary.feedback} />
             </main>
-            <Footer dictionary={dictionary.footer} />
         </div>
     );
 } 
