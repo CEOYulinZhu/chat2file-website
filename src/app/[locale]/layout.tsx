@@ -1,7 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { i18n } from '../../i18n-config';
-import { Locale } from '../../i18n-config';
+import { i18n, Locale } from '../../i18n-config';
+import { getDictionary } from '@/get-dictionary';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,6 +14,27 @@ interface RootLayoutProps {
     params: Promise<{
         locale: Locale;
     }>;
+}
+
+interface MetadataProps {
+    params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({ params }: MetadataProps) {
+    const { locale } = await params;
+    const dictionary = await getDictionary(locale);
+    const {
+        seo: { title, description, keywords },
+    } = dictionary;
+
+    return {
+        title: title,
+        description: description,
+        keywords: keywords,
+        icons: {
+            icon: '/logo.png',
+        },
+    };
 }
 
 export default async function RootLayout({

@@ -164,5 +164,10 @@
                 "answer": "在设置面板中，您可以设定 Word 文档属性（作者、标题等）、定义默认图片风格（浅色/暗色主题、圆角大小）、管理界面显示等。一次配置，永久生效。"
             }
         ]
+    },
+    "seo": {
+        "title": "Chat2File-deepseek - DeepSeek 对话一键转专业文档",
+        "description": "DeepSeek 对话一键转专业文档，支持 Markdown、Word、PDF、PNG 图片和纯文本格式，完美保留代码高亮、数学公式、Mermaid 图表等所有格式。",
+        "keywords": "DeepSeek, Chat2File, 对话导出, Markdown, Word, PDF, PNG, 代码高亮, 数学公式, Mermaid"
     }
 }

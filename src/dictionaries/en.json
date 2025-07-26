@@ -164,5 +164,10 @@
                 "answer": "The settings panel lets you customize Word document properties, default image styles, interface options, and more. Set your preferences once and you're all set."
             }
         ]
+    },
+    "seo": {
+        "title": "Chat2File-deepseek - Instantly Convert DeepSeek Chats to Professional Documents",
+        "description": "Instantly convert DeepSeek chats into polished documents. Export to Markdown, Word, PDF, or PNG, perfectly preserving all formatting like code highlighting, math formulas, and Mermaid diagrams.",
+        "keywords": "DeepSeek, Chat2File, Chat Export, Markdown, Word, PDF, PNG, Code Highlighting, Math Formulas, Mermaid"
     }
 }
