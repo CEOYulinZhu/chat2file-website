@@ -29,11 +29,13 @@ const Footer = ({ dictionary }: FooterProps) => {
 
             <div className="border-t border-gray-200 dark:border-gray-700">
                 <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400 gap-4">
-                    <div className="flex gap-4 order-2 md:order-1">
-                        <p>&copy; {new Date().getFullYear()} Chat2File-deepseek. All Rights Reserved.</p>
-                        <Link href="/zh" className="hover:underline">中文</Link>
-                        <Link href="/en" className="hover:underline">English</Link>
-                        <Link href="/ja" className="hover:underline">日本語</Link>
+                    <div className="flex flex-col md:flex-row items-center gap-4 order-2 md:order-1">
+                        <p className="text-center md:text-left">&copy; {new Date().getFullYear()} Chat2File-deepseek. All Rights Reserved.</p>
+                        <div className="flex gap-4">
+                            <Link href="/zh" className="hover:underline">中文</Link>
+                            <Link href="/en" className="hover:underline">English</Link>
+                            <Link href="/ja" className="hover:underline">日本語</Link>
+                        </div>
                     </div>
                     <div className="order-1 md:order-2 text-center md:text-right">
                         <span>{dictionary.suggestion_text}</span>
