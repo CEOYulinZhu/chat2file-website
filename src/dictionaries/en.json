@@ -68,6 +68,20 @@
         },
         "items": [
             {
+                "version": "V3.1",
+                "date": "July 31, 2025",
+                "title": "V3.1: Multi-language Support",
+                "description": "Introducing VSCode-style beautiful card export for elegant code sharing. Added bilingual support with intelligent language detection and automatic interface switching.",
+                "features": [
+                    "VSCode Beautiful Card Export",
+                    "Bilingual Support",
+                    "Smart Language Detection",
+                    "Auto Interface Switching"
+                ],
+                "reads": "1.8k reads",
+                "link_text": "Learn More"
+            },
+            {
                 "version": "V3.0",
                 "date": "July 23, 2025",
                 "title": "V3.0: The Efficiency Revolution",
@@ -78,7 +92,7 @@
                     "Rewritten Engine",
                     "Image Export"
                 ],
-                "reads": "1k reads",
+                "reads": "2.4k reads",
                 "link_text": "Learn More"
             },
             {
@@ -104,7 +118,7 @@
                     "Syntax Highlighting",
                     "Preserved Formatting"
                 ],
-                "reads": "2k reads",
+                "reads": "2.4k reads",
                 "link_text": "Learn More"
             }
         ]

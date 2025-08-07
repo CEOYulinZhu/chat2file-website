@@ -14,6 +14,10 @@ const icons = {
 const staticData = [
     {
         icon: 'Zap',
+        link: 'https://blog.csdn.net/2301_79858914/article/details/149813756?spm=1011.2415.3001.5331',
+    },
+    {
+        icon: 'Zap',
         link: 'https://blog.csdn.net/2301_79858914/article/details/149583799?spm=1011.2415.3001.5331',
     },
     {
