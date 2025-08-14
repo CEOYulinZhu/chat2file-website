@@ -68,6 +68,21 @@
         },
         "items": [
             {
+                "version": "V4.0",
+                "date": "August 14, 2025",
+                "title": "V4.0: Full Refresh · Major Word Export Upgrade",
+                "description": "Now fully compatible with Microsoft Word with math formulas support. Refined blockquotes, rules, and other styles. Export entire conversations to a single PNG long image and use the context menu to copy selected content to Word. Customize the export toolbar (reorder and hide). New local data panel and built-in help module. A refreshed UI across every detail for a cleaner, more efficient experience.",
+                "features": [
+                    "Major Word export upgrade (with math formulas)",
+                    "Global PNG long image export & context menu",
+                    "Customizable export buttons (reorder/hide)",
+                    "Local data panel & built-in help center",
+                    "Complete UI refresh and UX improvements"
+                ],
+                "reads": "1k+ reads",
+                "link_text": "Learn More"
+            },
+            {
                 "version": "V3.1",
                 "date": "July 31, 2025",
                 "title": "V3.1: Multi-language Support",
@@ -139,11 +154,16 @@
             "submit_button": "Submit Feedback"
         },
         "notification": {
-            "success_message": "Thanks for your feedback! We'll review it shortly."
+            "success_message": "Thank you for your feedback! We will carefully consider your suggestions.",
+            "error_message": "Submission failed, please try again later"
         },
         "validation": {
-            "email_required": "Email is required",
-            "invalid_email": "Please enter a valid email"
+            "email_required": "Please enter your email address",
+            "invalid_email": "Please enter a valid email address",
+            "name_required": "Please enter your name",
+            "message_required": "Please enter your suggestion",
+            "name_too_long": "Name cannot exceed 50 characters",
+            "message_too_long": "Suggestion cannot exceed 1000 characters"
         }
     },
     "help": {

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cross-env NEXT_PUBLIC_BASE_PATH=/chat2file next build",
+    "build": "next build",
     "postbuild": "node scripts/postbuild.js",
     "start": "next start",
     "lint": "next lint"

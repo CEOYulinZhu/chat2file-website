@@ -68,6 +68,21 @@
         },
         "items": [
             {
+                "version": "V4.0",
+                "date": "2025年8月14日",
+                "title": "全面焕新 · Word 导出重大升级",
+                "description": "完美兼容 Microsoft Word，并新增数学公式支持。引言、线条等样式全面优化；支持将完整对话一键导出为 PNG 长图并新增右键菜单；导出按钮支持自由排序与隐藏；新增本地数据面板与内置帮助模块；界面全方位焕新，操作更高效。",
+                "features": [
+                    "Word 导出重大升级（含数学公式）",
+                    "全局导出 PNG 长图与右键菜单",
+                    "导出按钮可自定义排序与隐藏",
+                    "本地数据面板与内置帮助中心",
+                    "界面全方位焕新与体验优化"
+                ],
+                "reads": "1k+ 阅读",
+                "link_text": "探索更新详情"
+            },
+            {
                 "version": "V3.1",
                 "date": "2025年7月31日",
                 "title": "视觉升级 · 多语言支持",
@@ -139,11 +154,16 @@
             "submit_button": "立即提交反馈"
         },
         "notification": {
-            "success_message": "感谢您的反馈！我们将尽快处理。"
+            "success_message": "感谢您的反馈！我们会认真考虑您的建议。",
+            "error_message": "提交失败，请稍后重试"
         },
         "validation": {
-            "email_required": "邮箱地址不能为空",
-            "invalid_email": "请输入有效的邮箱地址"
+            "email_required": "请输入邮箱地址",
+            "invalid_email": "请输入有效的邮箱地址",
+            "name_required": "请输入您的称呼",
+            "message_required": "请输入您的建议",
+            "name_too_long": "称呼长度不能超过50个字符",
+            "message_too_long": "建议内容不能超过1000个字符"
         }
     },
     "help": {

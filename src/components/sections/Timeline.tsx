@@ -13,6 +13,10 @@ const icons = {
 
 const staticData = [
     {
+        icon: 'FileText',
+        link: 'https://blog.csdn.net/2301_79858914/article/details/150287892?spm=1011.2124.3001.6209',
+    },
+    {
         icon: 'Zap',
         link: 'https://blog.csdn.net/2301_79858914/article/details/149813756?spm=1011.2415.3001.5331',
     },
@@ -126,11 +130,17 @@ interface TimelineProps {
 }
 
 const Timeline = ({ dictionary }: TimelineProps) => {
-    const timelineData = dictionary.items.map((item, index) => ({
-        ...item,
-        icon: icons[staticData[index].icon as keyof typeof icons],
-        link: staticData[index].link,
-    }));
+    // 兼容：当 staticData 与字典项数量不一致时提供回退
+    const timelineData: TimelineItemProps['item'][] = dictionary.items.map((item, index) => {
+        const mapping = staticData[index];
+        const mappedIcon = mapping ? icons[mapping.icon as keyof typeof icons] : FileText;
+        const mappedLink = mapping ? mapping.link : '#';
+        return {
+            ...item,
+            icon: mappedIcon,
+            link: mappedLink,
+        };
+    });
 
     const containerVariants: Variants = {
         hidden: {},
